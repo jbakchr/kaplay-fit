@@ -21,16 +21,16 @@ RESET="\033[0m"
 
 
 
-echo -e "\n${CYAN}Bumping ${BG_RED}${WHITE}npm version…${RESET}\n"
+echo -e "\n${CYAN}Bumping${RESET} ${BG_RED}${WHITE}npm version…${RESET}\n"
 npm version patch
 
 echo -e "\n${CYAN}Building…${RESET}\n"
 npm run build
 
-echo -e "\n${CYAN}Pushing to ${BG_BLACK}${WHITE}GitHub…${RESET}\n"
+echo -e "\n${CYAN}Pushing to ${RESET}${BG_BLACK}${WHITE}GitHub…${RESET}\n"
 git push
 
-echo -e "\n${CYAN}Publishing to ${BG_RED}${WHITE}npm…${RESET}\n"
+echo -e "\n${CYAN}Publishing to ${RESET}${BG_RED}${WHITE}npm…${RESET}\n"
 npm publish
 
-echo -e "\n${BG_GREEN}${WHITE}Done!${RESET}\n"
+echo -e "\n${BG_GREEN}${WHITE}Done${RESET}\n"

@@ -4,7 +4,8 @@
   "description": "Under development — mobile fit utilities for Kaplay games.",
   "main": "./src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite dev",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",

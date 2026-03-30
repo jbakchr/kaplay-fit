@@ -1,11 +1,21 @@
-# Folder
-examples/
+# Do NOT publish source code
 src/
+
+# Examples used for development/testing
+examples/
+
+# Test files (not needed by users)
 tests/
 
-# Configs
+# Build & tooling configuration
 tsconfig.json
 vite.config.ts
 
-# ts files
+# Ignore all raw TypeScript files outside dist/
 *.ts
+
+# Ignore maps (users only need compiled output)
+*.map
+
+# Optional: lockfile (auto-excluded by npm)
+package-lock.json

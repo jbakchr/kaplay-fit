@@ -1,6 +1,6 @@
 {
   "name": "kaplay-fit",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Under development — mobile fit utilities for Kaplay games.",
   "type": "module",
   "main": "./dist/kaplay-fit.cjs",

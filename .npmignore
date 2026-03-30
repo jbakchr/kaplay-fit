@@ -1,0 +1,24 @@
+# Do NOT publish source code
+src/
+
+# Examples used for development/testing
+examples/
+
+# Test files (not needed by users)
+tests/
+
+# Build & tooling configuration
+tsconfig.json
+vite.config.ts
+
+# Ignore all raw TypeScript files outside dist/
+*.ts
+
+# Ignore maps (users only need compiled output)
+*.map
+
+# Optional: lockfile (auto-excluded by npm)
+package-lock.json
+
+# Roadmap
+ROADMAP.md

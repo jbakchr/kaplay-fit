@@ -19,3 +19,6 @@ vite.config.ts
 
 # Optional: lockfile (auto-excluded by npm)
 package-lock.json
+
+# Roadmap
+ROADMAP.md

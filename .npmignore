@@ -4,6 +4,9 @@ src/
 tests/
 dist/
 
-# Files
+# Configs
 tsconfig.json
+vite.config.ts
+
+# ts files
 *.ts

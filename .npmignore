@@ -2,7 +2,6 @@
 examples/
 src/
 tests/
-dist/
 
 # Configs
 tsconfig.json

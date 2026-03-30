@@ -1,4 +1,9 @@
+# Folder
 examples/
 src/
+tests/
+dist/
+
+# Files
 tsconfig.json
 *.ts

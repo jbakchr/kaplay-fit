@@ -2,7 +2,20 @@
   "name": "kaplay-fit",
   "version": "0.0.7",
   "description": "Under development — mobile fit utilities for Kaplay games.",
-  "main": "./src/index.ts",
+  "type": "module",
+  "main": "./dist/kaplay-fit.cjs",
+  "module": "./dist/kaplay-fit.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/kaplay-fit.js",
+      "require": "./dist/kaplay-fit.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite dev",
     "build": "vite build"
@@ -12,9 +25,8 @@
     "url": "git+https://github.com/jbakchr/kaplay-fit.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "author": "Jonas Bak Phillipson",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jbakchr/kaplay-fit/issues"
   },

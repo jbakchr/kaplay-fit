@@ -1,6 +1,6 @@
 {
   "name": "kaplay-fit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Under development — mobile fit utilities for Kaplay games.",
   "main": "./src/index.ts",
   "scripts": {

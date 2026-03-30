@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/jbakchr/kaplay-fit/issues"
   },
-  "homepage": "https://github.com/jbakchr/kaplay-fit#readme"
+  "homepage": "https://github.com/jbakchr/kaplay-fit#readme",
+  "peerDependencies": {
+    "kaplay": "^3001.0.19"
+  },
+  "devDependencies": {
+    "kaplay": "^3001.0.19",
+    "typescript": "^5.0.0"
+  }
 }

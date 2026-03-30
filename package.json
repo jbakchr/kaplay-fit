@@ -24,7 +24,22 @@
     "type": "git",
     "url": "git+https://github.com/jbakchr/kaplay-fit.git"
   },
-  "keywords": [],
+  "keywords": [
+    "kaplay",
+    "kaplay-fit",
+    "kaplay-plugin",
+    "responsive",
+    "responsive-scaling",
+    "screen-fit",
+    "canvas-resize",
+    "aspect-ratio",
+    "virtual-resolution",
+    "letterboxing",
+    "mobile-game",
+    "safe-area",
+    "game-dev",
+    "html5-games"
+  ],
   "author": "Jonas Bak Phillipson",
   "license": "MIT",
   "bugs": {

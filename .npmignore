@@ -7,6 +7,9 @@ examples/
 # Test files (not needed by users)
 tests/
 
+# Assets
+assets/
+
 # Build & tooling configuration
 tsconfig.json
 vite.config.ts
@@ -22,3 +25,4 @@ package-lock.json
 
 # Roadmap
 ROADMAP.md
+

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/kaplay-fit-logo.png" alt="kaplay-fit logo" width="400">
+</p>
+
 # **kaplay-fit** _(work in progress)_
 
 _A lightweight plugin for automatic responsive scaling in Kaplay games._

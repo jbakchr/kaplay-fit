@@ -1,3 +1,7 @@
+<p>
+  <img src="./assets/kaplay-fit-logo.png" alt="kaplay-fit logo>
+</p>
+
 # kaplay-fit  
 _A tiny Kaplay plugin that applies a default mobile-friendly resolution (390×844)._
 

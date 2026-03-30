@@ -1,0 +1,21 @@
+{
+  "name": "kaplay-fit",
+  "version": "1.0.0",
+  "description": "Under development — mobile fit utilities for Kaplay games.",
+  "main": "./src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbakchr/kaplay-fit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jbakchr/kaplay-fit/issues"
+  },
+  "homepage": "https://github.com/jbakchr/kaplay-fit#readme"
+}

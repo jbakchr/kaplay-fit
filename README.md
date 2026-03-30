@@ -1,103 +1,90 @@
-<p align="center">
-  <img src="./assets/kaplay-fit-logo.png" alt="kaplay-fit logo" width="400">
-</p>
+# kaplay-fit  
+_A tiny Kaplay plugin that applies a default mobile-friendly resolution (390×844)._
 
-# **kaplay-fit** _(work in progress)_
+`kaplay-fit` is a very small Kaplay plugin that automatically sets your game's render resolution to **390 × 844**, a commonly used logical resolution for modern mobile portrait games.  
 
-_A lightweight plugin for automatic responsive scaling in Kaplay games._
-
-`kaplay-fit` is an upcoming plugin for the <https://kaplayjs.com> game framework designed to help your game **automatically scale, adapt, and fit** to different mobile device sizes and aspect ratios.
-
-Kaplay currently provides basic resizing options, but making games feel _truly_ responsive—especially on phones with unusual screen ratios—requires custom logic. **kaplay-fit** aims to solve this cleanly.
+This makes it easy to start building mobile-oriented Kaplay games without manually configuring width/height each time.
 
 ---
 
-## 🚀 Purpose
+## 📦 Installation
 
-Modern mobile devices vary _massively_ in width, height, pixel density, and safe‑area constraints.  
-`kaplay-fit` helps you:
+```sh
+npm install kaplay-fit
+````
 
-- **Scale your game canvas** to fit the available screen space
-- **Preserve your intended aspect ratio** (or allow dynamic aspect ratios)
-- **Reduce letterboxing / pillarboxing**
-- **Provide predictable “virtual resolution” coordinates** for your game
-- **Handle orientation changes gracefully**
-- **Offer drop‑in setup for most Kaplay games**
+***
 
-Whether you're building a casual portrait‑mode mobile game or a landscape arcade experience, this plugin aims to give Kaplay developers a convenient “just works” solution.
-
----
-
-## 📦 Features (planned)
-
-These are the first features expected in early releases:
-
-### ✅ **1. Fit‑to‑screen scaling modes**
-
-- `contain` – keep aspect ratio, show all content
-- `cover` – fill the screen, crop excess area
-- `stretch` – fit exactly (not recommended, but useful for some games)
-
-### ✅ **2. Virtual resolution system**
-
-Define a _logical game width/height_, and `kaplay-fit` will scale it appropriately across devices.
-
-### ✅ **3. Device‑aware scaling**
-
-- High DPI (retina) handling
-- Mobile browser UI shrinking/expanding
-- Safe‑area padding for iOS/Android notches
-
-### ✅ **4. Auto‑resizing on orientation change**
-
-### 🧪 **5. Optional debug overlay**
-
-To visualize:
-
-- scaling boundaries
-- safe area
-- actual render resolution
-- final scaling factor
-
----
-
-## 🧩 How it will integrate with Kaplay
-
-Your eventual usage might look like this:
+## 🚀 Usage
 
 ```ts
 import kaplay from "kaplay";
 import kaplayFit from "kaplay-fit";
 
 kaplay({
-  width: 480,
-  height: 270,
   plugins: [
-    kaplayFit({
-      mode: "contain",
-      safeArea: true,
-    }),
+    kaplayFit(),
   ],
 });
 ```
 
-The plugin installs itself inside the Kaplay init lifecycle and listens for resize events, updating the canvas transform as needed.
+That’s it!  
+Once installed, the plugin automatically:
 
----
+*   sets the internal render size to **390 × 844**
+*   stretches the game canvas visually to fill the browser viewport (`100vw` × `100vh`)
 
-## 📅 Project Status
+No configuration and no extra code are needed.
 
-`kaplay-fit` is currently **in active early development**.
+***
 
-The goal is to release an initial functional version with:
+## 📱 Why 390 × 844?
 
-- core scaling modes
-- stable virtual resolution
-- clean plug‑and‑play API
+Modern mobile devices commonly use a “logical CSS resolution” close to **390 × 844** in portrait mode.  
+Using a consistent default virtual resolution makes early development simpler and ensures your game starts with mobile-friendly proportions.
 
-If you’re interested in testing pre-release versions or contributing, stay tuned!
+***
 
----
+## ⚙️ What the plugin does (current version)
+
+*   Forces the Kaplay canvas render size to **390 × 844**
+*   Makes the displayed canvas fill the whole browser viewport
+*   Works automatically as soon as it’s included in `plugins`
+
+> ⚠️ This plugin is intentionally minimal in its early versions.  
+> It **does not** yet handle responsive scaling, orientation changes, safe areas, or aspect‑ratio management.
+
+These features may be added later.
+
+***
+
+## 🧩 Example: Complete Minimal Project
+
+```ts
+import kaplay from "kaplay";
+import kaplayFit from "kaplay-fit";
+
+const k = kaplay({
+  plugins: [kaplayFit()],
+});
+
+k.add([
+  text("Hello mobile screen!"),
+  pos(100, 100),
+]);
+```
+
+***
+
+## 🛠 Roadmap (planned features)
+
+*   Real responsive scaling modes (`contain`, `cover`, `stretch`)
+*   Safe‑area support (iPhone/Android notches)
+*   Virtual resolution abstraction
+*   Debug overlay showing bounds & scale
+*   Automatic orientation handling
+
+***
 
 ## 📜 License
 

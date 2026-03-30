@@ -1,8 +1,8 @@
-<p>
+<p align="center">
   <img src="./assets/kaplay-fit-logo.png" alt="kaplay-fit logo" width="400">
 </p>
 
-# kaplay-fit
+# **kaplay-fit**
 
 _A tiny Kaplay plugin that applies a default mobile-friendly resolution (390×844)._
 
@@ -88,4 +88,4 @@ k.add([text("Hello mobile screen!"), pos(100, 100)]);
 
 ## 📜 License
 
-MIT © 2026 Jonas Bak Phillipson
+**MIT © 2026 [Jonas Bak Phillipson](https://github.com/jbakchr)**
